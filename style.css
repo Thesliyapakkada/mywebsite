@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 .mainiv{
     width: 100%;
@@ -9,12 +10,12 @@
 }
 .head{
     height: 60px;
-    background-color: #80008052;
+    background-color: #ec88ec;
     display: flex;
     justify-content: space-between;
     padding: 5px;
     align-items: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -28,7 +29,7 @@ body{
     font-weight: bold;
 }
 .right{
-    font-family: serif; font-size: 14px; 
+    font-family: serif; font-size: 22px; 
     
 
 
@@ -111,75 +112,25 @@ h1{
     font-family: monospace;
 }
 .paragraph{
-    font-size: 25px;
+    font-size: 1.2rem;
     color: #80008080;
 }
 .scnd{
     height: 267px;
     width: 97%;
 }
-.prj{
-    width: 100%;
-    height: 100%;
-    background-color: #95559552;
-    text-align: center;
 
-}
-.cccc{
-    background-color: #d471cf00;
-    width: 100%;
-    height: 93%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   
-}
-.first{
-    width: 31%;
-    height: 80%;
-    /* background-color: white; */
-    border-radius: 46px;
-    background-color: #ffbbffd4;
-    
-}
-.div1{
-    width: 100%;
-    height: 62%;
-    background-color: white;
-    border-radius: 48px;
 
-}
-.div2{
-    width: 100%;
-    height: 38%;
-
-}
-.cm{
-    height: 74%;
-    width: 80%;
-}
-.nm{
-    width: 78%;
-    height: 85%;
-}
-.text1{
-    color: purple;
-    font-size: 24px;
-}
-.end{
-    color: purple;
-    font-size: 25px;
-    margin-top: 21px;
-}
 .profileDiv{
     width: 100%;
     height: 100vh;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEX4yNyQ69wLAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=);
     display: flex;
 
 
 }
 .profileImage{
-    background-color: green;
+    
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -189,21 +140,141 @@ h1{
     justify-content: flex-end;
 }
 .profileContent{
-    background-color: rgb(219, 32, 32);
+    
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
 }
 .profileimagePhoto{
-    width: 90%;
-    height:80%;
-    border-radius: 20px;
+    width: 60%;
+    height:67%;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
 
 }
+h3{
+    color: purple;
+    font-size: 53px;
+    font-family: monospace;
+}
+p{
+    color: purple;
+    font-size: 26px;
+    font-family: monospace;
+}
+.projectdiv{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(211, 125, 211);
+    
+}    
+.projectcontent{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projectimage{
+    border-radius: 61px;
+}
 
+.projecthead{
+text-align: center;
+margin: 30px;
+font-size: 53px;
+}
+.div1{
+    background-color: rgb(255 198 255 / 81%);
+    border-radius: 72px ;
+    width: 20%;
+    height: 477px;
+    margin-left: 20px;
+}
+img{
+    width: 100%;
+}
+h2{
+    color: rgb(157 22 157);
+    text-align: center;
+    font-size: 27px;
+}
 
+.projectparagraph{
+    color: rgb(205 45 205);
+    text-align: center;
+    font-size: 21px;
+}
+.contactdiv{
+    width: 100%;
+    height: 90vh;
+    background-color:rgb(146, 10, 146) ;
+}
+.contacttext{
+    text-align: center;
+    font-size: 53px;
+    color: rgb(63, 23, 63);
+
+}
+.label{
+    font-size: 23px;
+}
+.forminput{
+    
+    display: block;
+    width: 379px;
+    height: 41px;
+    border-radius: 5px;
+    margin-top: 24px;
+
+}
+.formdiv{
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.labeldiv1{
+    display: flex;
+}
+.labeltext{
+    color: white;
+}
+textarea{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.labelmessage{
+    width: 100%;
+}
+.labelmsg{
+    color: white;
+    font-size:23px ;
+}
+button{
+    width: 379px;
+    margin-top: 10px;
+    height: 50px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: pink;
+}
+.serviceMain{
+    display: flex;
+    background-color: #d37dd32b;
+    padding: 20px;
+
+}
 @media(max-width:600px){
     .profileDiv{
         width: 100%;
@@ -214,5 +285,18 @@ h1{
     .profileImage,.profileContent{
         justify-content: center;
     }
-   
+    .labeldiv1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:1000px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 17px 14px;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px;
+    }
+
 }
