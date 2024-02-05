@@ -281,6 +281,7 @@ button{
     padding: 10px;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .icons{
     color: #f78ef7;
@@ -372,6 +373,9 @@ h5{
         color: rgb(205 45 205);
         text-align: center;
         font-size: 13px;
+    }
+    h5{
+        font-size: 10px;
     }
 
 }
