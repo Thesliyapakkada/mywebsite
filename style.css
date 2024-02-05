@@ -173,9 +173,8 @@ p{
 .projectcontent{
     
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 .projectimage{
     border-radius: 61px;
@@ -191,7 +190,7 @@ font-size: 53px;
     border-radius: 72px ;
     width: 20%;
     height: 477px;
-    margin-left: 20px;
+    
 }
 img{
     width: 100%;
@@ -289,6 +288,14 @@ button{
         display: flex;
         flex-direction: column;
     }
+    .projectcontent{
+    
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 @media(max-width:1000px){
     .grid-container {
@@ -297,6 +304,48 @@ button{
         gap: 17px 14px;
         grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;
+    }
+    .left{
+        font-family: ui-monospace;
+        font-size:  18px;
+        color: rgba(158, 32, 105, 0.863);
+        font-weight: bold;
+    }
+    .right{
+        font-family: serif; 
+        font-size: 14px; 
+    }
+    h3{
+        color: purple;
+        font-size: 40px;
+        font-family: monospace;
+        text-align: center;
+    }
+    .profileimagePhoto{
+        margin-top: 150px;
+    }
+    p{
+        color: purple;
+        font-size: 20px;
+        font-family: monospace;
+        text-align: center;
+    }
+    .div1{
+        background-color: rgb(255 198 255 / 81%);
+        border-radius: 72px ;
+        width: 40%;
+        height: 315px;
+        
+    }
+    h2 {
+        color: rgb(157 22 157);
+        text-align: center;
+        font-size: 15px;
+    }
+    .projectparagraph {
+        color: rgb(205 45 205);
+        text-align: center;
+        font-size: 13px;
     }
 
 }
