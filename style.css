@@ -273,6 +273,24 @@ button{
     padding: 20px;
 
 }
+.footerdiv{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.icons{
+    color: #f78ef7;
+    font-size: 2rem;
+
+}
+.icons i{
+    cursor: pointer;
+    color: #f78ef7;
+    font-size: 2rem;
+}
 @media(max-width:600px){
     .profileDiv{
         width: 100%;
