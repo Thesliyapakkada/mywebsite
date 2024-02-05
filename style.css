@@ -279,7 +279,8 @@ button{
     background-color: black;
     display: flex;
     padding: 10px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .icons{
     color: #f78ef7;
@@ -290,6 +291,9 @@ button{
     cursor: pointer;
     color: #f78ef7;
     font-size: 2rem;
+}
+h5{
+    color: palevioletred;
 }
 @media(max-width:600px){
     .profileDiv{
