@@ -218,13 +218,24 @@ h2{
     width: 100%;
 }
 .forminput{
-    width: 100%;
+    width: 98%;
     display: block;
     height: 41px;
     border-radius: 5px;
     margin-top: 24px;
-
+    border: none;
+    background: #ffffff00;
+    color: white;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    outline: none;
 }
+.forminput::placeholder{
+    color: white;
+}
+
+
 .formdiv{
     margin-top: 54px;
     display: flex;
